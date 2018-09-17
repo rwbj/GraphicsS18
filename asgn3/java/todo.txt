@@ -1,0 +1,55 @@
+read in ply file
+    decode (fined a decoding class)
+    nomalize (get range and devide so min/max = -1/1)
+    face data (num of connected pts, p1,p2,p3)
+display on x,y
+    drop z
+    scale pts by screen size (size/2)+center
+transformations
+    3 rotares (pick one)
+        correct axis .1
+    6 translate
+    3 scale (pick one)
+    matix multiplication
+key press
+    read input loop
+
+
+
+
+
+
+You should now have a file which looks something like this:
+
+ply
+format ascii 1.0
+comment Created by Blender 2.71 (sub 0) - www.blender.org, source file: ''
+element vertex 507
+property float x
+property float y
+property float z
+element face 968
+property list uchar uint vertex_indices
+end_header
+6.867248 -3.385576 3.420591
+6.929748 -3.307451 3.350278
+6.992248 -3.291826 3.498716
+5.992248 -3.385576 3.420591
+5.960998 -3.377764 3.498716			<<<<<<<<<  507 lines like this
+5.867248 -3.291826 3.498716			<<< the x,y,z cords of each vertex
+6.976623 -3.198076 3.311216
+7.054748 -3.182451 3.498716
+5.929748 -3.307451 3.350278
+5.804748 -3.182451 3.498716
+.
+.
+.
+3 0 1 2
+3 3 4 5
+3 1 6 7						<<<<<<<<<  968 lines like this
+3 8 5 9						<<< one line per triangle, shows
+3 10 11 6						<<< which vertices to connect
+3 12 8 13
+.
+.
+.

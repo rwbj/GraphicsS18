@@ -1,0 +1,7 @@
+    compound transformation matrix
+x        create transformation matrix
+x        default points and trans points
+x           create 2nd pt list
+x           read in to both//no! read to master, compound*masterList = current list
+        fix all trans functions
+        fix aplication of transformations

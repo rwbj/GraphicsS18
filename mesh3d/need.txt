@@ -1,0 +1,1 @@
+cc -o g2 g2.c -lGL -lGLU -lglut /usr/lib/x86_64-linux-gnu/libdrm.a -lm

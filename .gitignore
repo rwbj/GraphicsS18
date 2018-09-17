@@ -1,0 +1,6 @@
+*.exe
+*.zip
+*.out
+*.tar
+test*
+*test
